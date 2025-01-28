@@ -168,6 +168,102 @@ a {
     background: #ffffff;
 }
 
+/* Seccion1 */
+
+.section_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portada {
+    animation: texto 3s ease-in-out;
+}
+
+.portada > h1 {
+    font-size: 70px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 6rem;
+    margin: 0;
+}
+
+.portada > p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px 0;
+}
+
+.portada > button {
+    padding: 15px 3%;
+    color: white;
+    background: black;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.section_1 > img {
+    width: 40%;
+    min-width: 300px;
+    max-width: 800px;
+    animation: image 3s ease-in-out;
+}
+
+@keyframes texto {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes image {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    50%{
+        opacity: .5;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* Media Responsi */
+
+@media (max-width: 767px){
+    .navegacion > a, 
+    .navegacion > button {
+        display: none;
+    }
+    .section_1 > img {
+        display: none;
+    }
+    .portada > h1 {
+        font-size: 30px;
+        line-height: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+    .section_1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .navegacion > a,
+    .navegacion > button {
+        display: none;
+    }
+}
+
 
 
 
