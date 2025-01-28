@@ -1,10 +1,3 @@
-@import url(/estilos.css/nav.css);
-@import url(/estilos.css/portada.css);
-@import url(/estilos.css/marcas.css);
-@import url(/estilos.css/servicios.css);
-@import url(/estilos.css/registrar.css);
-@import url(/estilos.css/case_study.css);
-
 * {
     box-sizing: border-box;
 }
